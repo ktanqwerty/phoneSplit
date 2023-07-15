@@ -88,7 +88,7 @@ func main() {
 
 	user := "me"
 	r, err := service.Users.Messages.List(user).Q(query).Q(dateQuery).Do()
-	r, err = service.Users.Messages.List(user).Q(query).MaxResults(3).Do()
+	// r, err = service.Users.Messages.List(user).Q(query).MaxResults(3).Do()
 	
 	if err != nil {
 		log.Fatalf("Unable to retrieve messages: %v", err)
